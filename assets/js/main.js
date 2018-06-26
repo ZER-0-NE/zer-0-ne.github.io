@@ -59,7 +59,7 @@ jQuery(document).ready(function($) {
     
     
     /* Github Activity Feed - https://github.com/caseyscarborough/github-activity */
-    GitHubActivity.feed({ username: "ZER-0-NE", selector: "#feed" });
+    GitHubActivity.feed({ username: "ZER-0-NE", selector: "#feed", limit: 10  });
 
 
 });
