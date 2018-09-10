@@ -523,6 +523,7 @@ iframe {
   .header .profile-image {
     float: none !important;
     margin: 0 auto;
+    width: 50%;
   }
   .header .profile-content {
     float: none !important;
