@@ -125,7 +125,9 @@ iframe {
   font-weight: bold;
 }
 .header .profile-image {
-  margin-right: 30px;
+  margin-left: auto;
+    margin-right: auto;
+    width: 22%;
 }
 .header .profile-content .name {
   color: #49515a;
@@ -524,7 +526,7 @@ iframe {
   }
   .header .profile-content {
     float: none !important;
-    text-align: center;
+    text-align: center !important;
   }
   .header .btn {
     margin-top: 30px;
