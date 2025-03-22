@@ -1,14 +1,38 @@
 /* Theme */
 
 main {
-	background: #303F9F;
-	color: #FAFAFA;
+	background: linear-gradient(135deg, #4568dc, #3a1c71);
+	color: #FFFFFF;
+	transition: all 0.5s ease;
 }
 
 .icons-social a {
-	color: #FAFAFA;
+	color: #FFFFFF;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.icons-social a:hover {
+	opacity: 0.8;
+	transform: translateY(-3px);
 }
 
 .icons-social a svg path{
-	fill: #FAFAFA;
+	fill: #FFFFFF;
+}
+
+/* Add subtle floating animation to main content */
+.intro {
+	animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0px);
+	}
+	50% {
+		transform: translateY(-10px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
 }
