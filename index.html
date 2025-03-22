@@ -8,10 +8,9 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ZER-0-NE">
+    <meta name="description" content="Abhishek Singh - Software Engineer Portfolio">
     <link rel="shortcut icon" href="dev.png">  
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'> 
+    <link href='https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
     <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
     <!-- Plugins CSS -->
@@ -51,54 +50,86 @@
       </script>
 
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: "ca-pub-8675263685807598",
-          enable_page_level_ads: true
-     });
-</script>
+      <script>
+           (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "ca-pub-8675263685807598",
+                enable_page_level_ads: true
+           });
+      </script>
 
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
+    <!-- Shadow override styles -->
+    <style>
+        *, *::before, *::after {
+            box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+            text-shadow: none !important;
+        }
+        
+        /* Override Bootstrap shadows */
+        .btn, .btn:hover, .btn:active, .btn:focus,
+        .btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus,
+        .btn-default, .btn-default:hover, .btn-default:active, .btn-default:focus,
+        .btn-success, .btn-success:hover, .btn-success:active, .btn-success:focus,
+        .panel, .panel-heading, .panel-body,
+        .list-group, .list-group-item,
+        .navbar, .navbar-default, .navbar-inverse,
+        .dropdown-menu,
+        .alert,
+        .well,
+        .section, .section-inner, .section:hover, .section-inner:hover,
+        .thumbnail, .img-thumbnail {
+            box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+        }
+        
+        /* Disable transitions for box-shadow */
+        .section, .section-inner, .item, .testimonials .item .quote, .experience .item::before, 
+        .education .item::before, .header, .header .profile-image, .btn, .hover-card {
+            transition-property: transform, color, background-color !important;
+            transition-property: -webkit-transform, color, background-color !important;
+            transition-property: -moz-transform, color, background-color !important;
+        }
+    </style>
+</head> 
 
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-  </head> 
-
-  <body>
+<body>
 
     <main>
+        <div class="intro-wrapper">
+            <div id="typed-strings" class="intro">
+                <p>Hi, I'm Abhishek!<p>
+            </div>
+            <span id="typed" style="font-size: 50px; color: white"></span>
 
-        <div  id="typed-strings" class="intro">
-            <p >Hi, I'm Abhishek!<p>
+            <style>           
+             span.typed-cursor
+                {
+                    opacity: 0
+                }
+            </style>
+            <script>
+                  var typed = new Typed('#typed', {
+                    stringsElement: '#typed-strings',
+                    backSpeed: 30,
+                    typeSpeed: 60,
+                    loop: true
+                  });
+            </script>
+
+            <div class="tagline">Go | Kubernetes | Security & Networking | Machine Learning | Traveler </div>
+
+            <div class="icons-social">
+                <a target="_blank" href="https://github.com/ZER-0-NE"><i class="fab fa-github"></i></a>
+                <a target="_blank" href="https://stackoverflow.com/users/9871400/abhishek-singh"><i class="fab fa-stack-overflow"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/abhishek-singh-046245122/"><i class="fab fa-linkedin-in"></i></a>
+                <a target="_blank" href="mailto:abhishek.nitdgp.98@gmail.com"><i class="fas fa-envelope"></i></a>
+                <a target="_blank" href="https://sourcerer.io/zer-0-ne"><i class="fas fa-code"></i></a>
+            </div>
         </div>
-        <span id="typed" style="font-size: 50px; color: aliceblue"></span>
-
-        <style>           
-         span.typed-cursor
-            {
-                opacity: 0
-            }
-        </style>
-<script>
-      var typed = new Typed('#typed', {
-        stringsElement: '#typed-strings',
-        backSpeed: 30,
-        typeSpeed: 60,
-        loop: true
-      });
-</script>
-
-        <div class="tagline">Go | Kubernetes | Security & Networking | Machine Learning | Traveler </div>
-
-        <div class="icons-social">
-            <a target="" href="https://github.com/ZER-0-NE"><i class="fab fa-github"></i></a>
-            <a target="" href="https://stackoverflow.com/users/9871400/abhishek-singh"><i class="fab fa-stack-overflow"></i></a>
-            <a target="" href="https://www.linkedin.com/in/abhishek-singh-046245122/"><i class="fab fa-linkedin-in"></i></a>
-            <a target="" href="mailto:abhishek.nitdgp.98@gmail.com"><i class="fas fa-envelope "></i></a>
-            <a target="" href="https://sourcerer.io/zer-0-ne"><i class="fas fa-code"></i></a>
-
-
-
-
     </main>
 
 
@@ -120,7 +151,7 @@
                 </ul>  -->
             </div><!--//profile-->
             <div class="profile-content" style="text-align: center;">
-                <a class="btn btn-cta-primary " href="mailto:abhishek.nitdgp.98@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i>Contact Me</a>  
+                <a class="btn btn-cta-primary" href="mailto:abhishek.nitdgp.98@gmail.com" target="_blank"><i class="fa fa-paper-plane"></i> Contact Me</a>  
             </div>              
         </div><!--//container-->
     </header><!--//header-->
@@ -131,32 +162,97 @@
             <div class="primary col-md-8 col-sm-12 col-xs-12">
                 <section class="about section">
                     <div class="section-inner">
-                        <h2 class="heading">A little about me and what I wish to achieve:</h2>
+                        <h2 class="heading">About Me</h2>
                         <div class="content">
-                          <p>I am a Software Engineer with an innate love for nature, a desire for traveling, and a genuine interest in meeting new people! </p>
+                          <p>I am a Software Engineer with an innate love for <span class="highlight-text">nature</span>, a desire for <span class="highlight-text">traveling</span>, and a genuine interest in meeting <span class="highlight-text">new people</span>! </p>
                           <br>
-                            <p>I am a tech-enthusiast with a firm belief in the power of technology to make a significant positive impact in the world. I love to keep myself updated with all the latest technologies and trends in the software industry.</p>
+                            <p>I am a <span class="highlight-text">tech-enthusiast</span> with a firm belief in the power of technology to make a significant positive impact in the world. I love to keep myself updated with all the latest technologies and trends in the software industry.</p>
                             <br>
-                            <p>I enjoy motivating and being part of a productive team and I am equally comfortable with working on my initiative.
-                            </p>
+                            <p>I enjoy motivating and being part of a <span class="highlight-text">productive team</span> and I am equally comfortable working on my own initiative.</p>
                             <br>
-                            <p>My career goal is to uncover the scientific principles which give rise to intelligence through learning, similar to how the human brain learns. I find Machine Learning interesting because developing our understanding of it entails developing our understanding of the principles that underlie intelligence.</p>
+                            <p>My career goal is to uncover the scientific principles which give rise to <span class="highlight-text">intelligence through learning</span>, similar to how the human brain learns. I find Machine Learning interesting because developing our understanding of it entails developing our understanding of the principles that underlie intelligence.</p>
                             <br>
-                            Apart from this, I'm quite fond of reading books from a variety of genres.
+                            <p>Apart from this, I'm quite fond of reading books from a variety of genres.</p>
                             <br>
-                            <br>
-                          
-                             </p>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->                 
+                </section><!--//section-->
+
+                <section class="experience section">
+                    <div class="section-inner">
+                        <h2 class="heading">Work Experience</h2>
+                        <div class="content">
+
+                            <div class="item">
+
+                                <h3 class="title">Software Engineer - III <span class="place"><a href="https://www.f5.com/cloud">F5</a></span> <span class="year">(June 2022 - Present)</span></h3>
+                                <p> Working for the overarching security of F5XC (F5 Distributed Cloud Services) under the Security Architecture team.
+<p> Developed audit features across multiple cloud environments(AWS, GCP, Azure) for F5XC using Python.</p>
+<p> Developed SBOM generation and signing scripts as per US Federal and customer requirement. </p>
+<p> Developing and working on security controls for kubernetes microservices architecture written in Golang.</p>
+<p> Improving and understanding security posture for FedRamp compliance by TCP packet captures within microservices among different kubernetes clusters using wireshark.</p>
+<p> Working with Automation team to build end-to-end integration tests improving the resiliency and scalability of platform</p>
+<p> Delivered route export for public endpoints feature leading to 4x improvement in total routes present in the platform.</p>
+<p> Delivered LTS Customer Edge(CE) kubernetes clusters handling the problem of multiple expiring Issuing CA's efficiently.</p>
+<p> Developed chaos testing framework targeting multiple kubernetes clusters</p>
+                            </div>
+
+
+                        	<div class="item">
+
+                                <h3 class="title">Software Engineer <span class="place"><a href="https://www.ibm.com/in-en">IBM</a></span> <span class="year">(Jan 2021 - Present)</span></h3>
+                                <p> Migrated and provisioned infrastructure of 5+ on-premise applications to hybrid cloud of AT&T on Microsoft Azure </p>
+                                <p> Automated infrastructure using Terraform (IaC) and Azure DevOps for building pipelines and Packer for machine images </p>
+                                <p> Developed App Service Factory Model streamlining deployment of App
+                                Services on Azure for 60+ team members</p>
+                                <!-- <span class = "link"><a href = "https://orcasound.github.io/orcaal/"> Link to Project</a></span> -->
+                            </div><!--//item-->
+
+
+                        	<div class="item">
+
+                                <h3 class="title">Google Summer of Code Mentor <span class="place"><a href="http://www.orcasound.net/">Orcasound</a></span> <span class="year">(March 2020 - August 2020)</span></h3>
+                                <p>Helped two students build an Active Learning pipeline (OrcaAL) which helps teach machines to detect orca (or killer whale) sounds. Specifically helped in the building, training, and pre-processing of the ML model that goes in the backend. </p>
+                                <span class = "link"><a href = "https://orcasound.github.io/orcaal/"> Link to Project</a></span>
+                            </div><!--//item-->
+
+                        	<div class="item">
+
+                                <h3 class="title">Google Summer of Code Student Developer <span class="place"><a href="https://www.esipfed.org/">Earth Science Information Partners</a></span> <span class="year">(April 2019 - August 2019)</span></h3>
+                                <p> Worked on 14 years of acoustic data of size 1 TeraByte in collaboration with AOOS and Axiom Data Science</p>
+                                <p> Developed deep learning models for detection of killer whale calls achieving 95% accuracy on test set and for classification of 20 killer whale pods achieving 61% accuracy. </p>
+                                <p> Deployed a Flask web-app using docker containers with uWSGI as web server and Nginx as a reverse proxy .</p>
+                                <span class = "link"><a href = "https://github.com/axiom-data-science/OrcaCNN"> Link to Project</a></span>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Machine Learning Research Intern <span class="place"><a href="http://dtu.ac.in/">Delhi Technological University</a></span> <span class="year">(Dec 2018 - Jan 2019)</span></h3>
+                                <p>Developed a web-application for Real-Time Sentiment Analysis of Memes using flask framework in Python. The web-app was able to successfully classify memes on the basis of its polarity (Pos, Neg, Neu). 
+								The work was done under the supervision of Dr. Akshi Kumar.</p>
+                                 <span class = "link"><a href = "https://github.com/ZER-0-NE/Real-Time-Sentiment-Analysis-from-Memes"> Link to Project</a></span>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Deep Learning Research Intern <span class="place"><a href="https://www.nitdgp.ac.in/">NIT Durgapur</a></span> <span class="year">(May 2018 - June 2018)</span></h3>
+                                <p>Developed the model "Detection of Rare genetic diseases using facial 2D images with Transfer Learning" under the supervision of Dr. Dakshina Ranjan Kisku.</p>
+                                <span class = "link"><a href = "https://ieeexplore.ieee.org/document/8703997"> Link to Paper</a></span>
+                            </div><!--//item-->
+                            <div class="item">
+                                <h3 class="title">Software Developer Intern - <span class="place"><a href="https://www.sketchbytes.com/">SketchBytes Research Labs</a></span> <span class="year">(June 2017 - July 2017)</span></h3>
+                                <p>Developed an efficient Algortihm for Computer aided diagnosis of Brain Tumor using MATLAB.<br></p>
+                                <span class = "link"><a href = "https://drive.google.com/file/d/0B45DAdf1zW5LWkg1QUZhVTlPVGc/view?usp=sharing/"> Link to Project</a></span>
+                            </div><!--//item-->
+                            <!-- <div class="item">
+                                <h3 class="title">Isles Institute of Technology <span class="place"><a href="#"></a></span> <span class="year">(June 2015 - June 2016)</span></h3>
+                                <p>Completed a year training for basics of Computer Programming and networking under CBSE 12th Syllabus.</p>
+                                <p>Scored 99 out of 100 in Computer Science among 1.2 million candidates. </p>
+                            </div><!--//item--> 
 
                         </div><!--//content-->
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
 
-
-
                 <section class="latest section">
                     <div class="section-inner">
-                        <h2 class="heading">My Projects include:</h2>
+                        <h2 class="heading">Featured Projects</h2>
                         <div class="content">    
 
                             <div class="item featured text-center">
@@ -273,70 +369,6 @@
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
-                
-                <section class="experience section">
-                    <div class="section-inner">
-                        <h2 class="heading">Work Experience so far:</h2>
-                        <div class="content">
-
-                            <div class="item">
-
-                                <h3 class="title">Software Engineer - II <span class="place"><a href="https://www.f5.com/cloud">F5</a></span> <span class="year">(June 2022 - Present)</span></h3>
-                                <p>Working in F5XC (F5 Distributed Cloud Services) Security team.</p>
-                            </div>
-
-
-                        	<div class="item">
-
-                                <h3 class="title">Software Engineer <span class="place"><a href="https://www.ibm.com/in-en">IBM</a></span> <span class="year">(Jan 2021 - Present)</span></h3>
-                                <p> - Migrated and provisioned infrastructure of 5+ on-premise applications to hybrid cloud of AT&T on Microsoft Azure </p>
-                                <p> - Automated infrastructure using Terraform (IaC) and Azure DevOps for building pipelines and Packer for machine images </p>
-                                <p> - Developed App Service Factory Model streamlining deployment of App
-                                Services on Azure for 60+ team members</p>
-                                <!-- <span class = "link"><a href = "https://orcasound.github.io/orcaal/"> Link to Project</a></span> -->
-                            </div><!--//item-->
-
-
-                        	<div class="item">
-
-                                <h3 class="title">Google Summer of Code Mentor <span class="place"><a href="http://www.orcasound.net/">Orcasound</a></span> <span class="year">(March 2020 - August 2020)</span></h3>
-                                <p>Helped two students build an Active Learning pipeline (OrcaAL) which helps teach machines to detect orca (or killer whale) sounds. Specifically helped in the building, training, and pre-processing of the ML model that goes in the backend. </p>
-                                <span class = "link"><a href = "https://orcasound.github.io/orcaal/"> Link to Project</a></span>
-                            </div><!--//item-->
-
-                        	<div class="item">
-
-                                <h3 class="title">Google Summer of Code Student Developer <span class="place"><a href="https://www.esipfed.org/">Earth Science Information Partners</a></span> <span class="year">(April 2019 - August 2019)</span></h3>
-                                <p> - Worked on 14 years of acoustic data of size 1 TeraByte in collaboration with AOOS and Axiom Data Science</p>
-                                <p>- Developed deep learning models for detection of killer whale calls achieving 95% accuracy on test set and for classification of 20 killer whale pods achieving 61% accuracy. </p>
-                                <p>- Deployed a Flask web-app using docker containers with uWSGI as web server and Nginx as a reverse proxy .</p>
-                                <span class = "link"><a href = "https://github.com/axiom-data-science/OrcaCNN"> Link to Project</a></span>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Machine Learning Research Intern <span class="place"><a href="http://dtu.ac.in/">Delhi Technological University</a></span> <span class="year">(Dec 2018 - Jan 2019)</span></h3>
-                                <p>Developed a web-application for Real-Time Sentiment Analysis of Memes using flask framework in Python. The web-app was able to successfully classify memes on the basis of its polarity (Pos, Neg, Neu). 
-								The work was done under the supervision of Dr. Akshi Kumar.</p>
-                                 <span class = "link"><a href = "https://github.com/ZER-0-NE/Real-Time-Sentiment-Analysis-from-Memes"> Link to Project</a></span>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Deep Learning Research Intern <span class="place"><a href="https://www.nitdgp.ac.in/">NIT Durgapur</a></span> <span class="year">(May 2018 - June 2018)</span></h3>
-                                <p>Developed the model "Detection of Rare genetic diseases using facial 2D images with Transfer Learning" under the supervision of Dr. Dakshina Ranjan Kisku.</p>
-                                <span class = "link"><a href = "https://ieeexplore.ieee.org/document/8703997"> Link to Paper</a></span>
-                            </div><!--//item-->
-                            <div class="item">
-                                <h3 class="title">Software Developer Intern - <span class="place"><a href="https://www.sketchbytes.com/">SketchBytes Research Labs</a></span> <span class="year">(June 2017 - July 2017)</span></h3>
-                                <p>Developed an efficient Algortihm for Computer aided diagnosis of Brain Tumor using MATLAB.<br></p>
-                                <span class = "link"><a href = "https://drive.google.com/file/d/0B45DAdf1zW5LWkg1QUZhVTlPVGc/view?usp=sharing/"> Link to Project</a></span>
-                            </div><!--//item-->
-                            <!-- <div class="item">
-                                <h3 class="title">Isles Institute of Technology <span class="place"><a href="#"></a></span> <span class="year">(June 2015 - June 2016)</span></h3>
-                                <p>Completed a year training for basics of Computer Programming and networking under CBSE 12th Syllabus.</p>
-                                <p>Scored 99 out of 100 in Computer Science among 1.2 million candidates. </p>
-                            </div><!--//item--> 
-
-                        </div><!--//content-->  
-                    </div><!--//section-inner-->                 
-                </section><!--//section-->
 
                 <section class="Extracurricular section">
                     <div class="section-inner">
@@ -390,7 +422,7 @@
                         <h2 class="heading sr-only">Basic Information</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Port Blair, A&N Islands</li>
+                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Current City: Bengaluru</li>
                                 <li><i class="fa fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:abhishek.nitdgp.98@gmail.com">abhishek.nitdgp.98</a></li>
                                 <li><i class="fa fa-link"></i><span class="sr-only">Blog:</span><a href="https://thezer00ne.wordpress.com">My Wordpress Blog</a></li>
                                 <!-- <li><i class="fa fa-link"></i><span class="sr-only"></span><a href="https://drive.google.com/file/d/1jpqj2QCdnXiDqAyafX1NpDQYd2csdwWM/view?usp=sharing">CV (2 pages)</a></li> -->
@@ -405,44 +437,41 @@
                         <h2 class="heading">Skills:</h2>
                         <div class="content">
                             <div class="skillset">
+                                <div class="item">
+                                    <h3 class="level-title">Go<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I've used go for better part of my career" ><i class = "fa fa-info-circle"></i></span></h3>
+                                    <div class="level-bar">
+                                        <div class="level-bar-inner" data-level="80%">
+                                        </div>                                      
+                                    </div><!--//level-bar-->                                 
+                                </div><!--//item-->
 
                                 <div class="item">
                                     <h3 class="level-title">Python<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I use Python day to day for software development and automation"><i class = "fa fa-info-circle"></i></span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
+                                        <div class="level-bar-inner" data-level="80%">
                                         </div>                                      
                                     </div><!--//level-bar-->                                 
                                 </div><!--//item-->
 
-
-                                <div class="item">
-                                    <h3 class="level-title">Cloud & DevOps<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title=""><i class = "fa fa-info-circle"></i></span></h3>
-                                    <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="60%">
-                                        </div>                                      
-                                    </div><!--//level-bar-->                                 
-                                </div><!--//item-->
-                                
-                                
                                 <div class="item">
                                     <h3 class="level-title">Machine Learning &amp; Deep Learning<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Actively Learning and Developing real world models"><i class = "fa fa-info-circle"></i></span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="50%">
+                                        <div class="level-bar-inner" data-level="70%">
                                         </div>                                      
                                     </div><!--//level-bar-->                                
                                 </div><!--//item-->
 
-                                <!--  <div class="item">
+                                 <div class="item">
                                     <h3 class="level-title">Docker and Kubernetes<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="Actively learning and Deploying!"><i class = "fa fa-info-circle"></i></span></h3>
                                     <div class="level-bar">
-                                        <div class="level-bar-inner" data-level="50%">
+                                        <div class="level-bar-inner" data-level="70%">
                                         </div>                                      
                                     </div>                                
-                                </div> -->
-
+                                </div>
+                                
 
                                 <div class="item">
-                                    <h3 class="level-title">Statistics<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I enjoy the statistical viewpoint of Machine Learning and our world!"><i class = "fa fa-info-circle"></i></span></h3>
+                                    <h3 class="level-title">Statistics & Probability<span class="level-label" data-toggle="tooltip" data-placement="left" data-animation="true" title="I enjoy the statistical viewpoint of Machine Learning and our world!"><i class = "fa fa-info-circle"></i></span></h3>
                                     <div class="level-bar">
                                         <div class="level-bar-inner" data-level="50%">
                                         </div>                                      
@@ -476,12 +505,9 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
 
-
-
-
                 <aside class="testimonials aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Recommendations Received:</h2>
+                        <h3 class="heading">Recommendations:</h3>
                         <div class="content">
                             <div class="item">
                                 <blockquote class="quote">                                  
@@ -503,6 +529,13 @@
                                   <p class="source"><span class="name">Dr. Jesse Lopez</span><br /><span class="title">Computational Scientist at Axiom Data Science</span></p>                                                             
                             </div><!--//item-->
 
+                                                        <div class="item">
+                                <blockquote class="quote">                                  
+                                    <p><i class="fa fa-quote-left"></i>Having worked with Abhishek as his manager for two years, I must say Abhishek was an outstanding software engineer; his skills and knowledge in the area of Security and Distributed Services were unparalleled. Abhishek was tasked with building Security tools and identifying Security gaps in our platform and Abhishek did an excellent job in not only in identifying gaps but also recommending fixes and had gained expert knowledge of a complex multi-cloud architecture in no time. Abhishek always was up to date on software developments and thus finding new solutions. He was an excellent team player and was a reliable and enthusiastic engineer and was very easy to work with. </p>
+                                  </blockquote>                
+                                  <p class="source"><span class="name">Suresh Kumar</span><br /><span class="title">Senior Engineering Manager at F5</span></p>                                                             
+                            </div><!--//item-->
+
 
                               <p><a class="more-link" href="https://www.linkedin.com/in/abhishek-singh-046245122/"><i class="fa fa-external-link"></i> Linkedin</a></p> 
 
@@ -514,11 +547,14 @@
 
                 <aside class="list awards and honors aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Awards and Honors:</h2>
+                        <h3 class="heading">Achievements:</h3>
                         <div class="content">
                             <ul class="list-unstyled">
-                                <li><i class=""></i><a> GSoC Heat Winner</a> (conducted by GNU Linux Group NIT Durgapur)</li>
-                                
+                                <li><i class="fa fa-trophy"></i> Google Summer of Code Student Developer at ESIP (2019)</li>
+                                <li><i class="fa fa-trophy"></i> Google Summer of Code Mentor at Orcasound (2020)</li>
+                                <li><i class="fa fa-trophy"></i> GSoC Heat Winner</li>
+                                <li><i class="fa fa-trophy"></i> Secured 6th position in All India Senior School Certificate Examination-2016</li>
+                                <li><i class="fa fa-trophy"></i> First position in Inter-Hall Table Tennis at NIT Durgapur (2017)</li>
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
@@ -526,15 +562,15 @@
 
                 <aside class="list awards and honors aside section">
                     <div class="section-inner">
-                        <h2 class="heading">Conferences/Talks attended/delivered:</h2>
+                        <h2 class="heading">Conferences & Talks:</h2>
                         <div class="content">
                             <ul class="list-unstyled">
-                            <li><i class="fa fa-trophy"></i><a href = "https://in.pycon.org/2019/">PyCon India 2019 held at Chennai Trade Center.</a></li>
-                            <li><i class="fa fa-trophy"></i><a href = "https://docs.google.com/presentation/d/1S1E_BumLzGpZXQrCoxZUbd1OcUilPtQJKX9SEa70ipw/edit?usp=sharing">Presented a talk on the paper Detection of Rare Genetic Diseases using Facial 2D Images With Transfer Learning at ISED'18.</a></li>
-                             <li><i class="fa fa-trophy"></i><a href = "#">Google Developers Group DevFest 2018 in Kolkata, India.</a></li>
-                                <li><i class="fa fa-trophy"></i><a href = "https://in.pycon.org/2018/">PyCon India 2018 held at Hyderabad International Convention Center.</a></li>
-                                <li><i class="fa fa-trophy"></i><a href = "https://docs.google.com/presentation/d/17EKv_ocbhB1zrc4s2l0xWRM2J6TBlHTbbuNuyo_3FHk/edit?usp=sharing">Delivered a Speech on basic introduction to CNN and applications of Machine Learning to freshman year at NIT Durgapur in the Self-Driving Vehicle Workshop.</a></li>
-                                <li><i class="fa fa-trophy"></i><a href = "https://youtu.be/TjbcolZSooA">Delivered a speech on how to get foreign internships in the internship bootcamp workshop at NIT Durgapur.</a></li>
+                            <li><i class="fa fa-microphone"></i><a href = "https://in.pycon.org/2019/">PyCon India 2019 held at Chennai Trade Center.</a></li>
+                            <li><i class="fa fa-microphone"></i><a href = "https://docs.google.com/presentation/d/1S1E_BumLzGpZXQrCoxZUbd1OcUilPtQJKX9SEa70ipw/edit?usp=sharing">Presented a talk on the paper Detection of Rare Genetic Diseases using Facial 2D Images With Transfer Learning at ISED'18.</a></li>
+                             <li><i class="fa fa-microphone"></i><a href = "#">Google Developers Group DevFest 2018 in Kolkata, India.</a></li>
+                                <li><i class="fa fa-microphone"></i><a href = "https://in.pycon.org/2018/">PyCon India 2018 held at Hyderabad International Convention Center.</a></li>
+                                <li><i class="fa fa-microphone"></i><a href = "https://docs.google.com/presentation/d/17EKv_ocbhB1zrc4s2l0xWRM2J6TBlHTbbuNuyo_3FHk/edit?usp=sharing">Delivered a Speech on basic introduction to CNN and applications of Machine Learning to freshman year at NIT Durgapur in the Self-Driving Vehicle Workshop.</a></li>
+                                <li><i class="fa fa-microphone"></i><a href = "https://youtu.be/TjbcolZSooA">Delivered a speech on how to get foreign internships in the internship bootcamp workshop at NIT Durgapur.</a></li>
                                 
                             </ul>
                         </div><!--//content-->
@@ -615,10 +651,7 @@
                     </aside><!--//section-->
 
 
-
-
-
-                </div><!--//secondary-->    
+                </div><!--//secondary-->
             </div><!--//row-->
         </div><!--//masonry-->
 
@@ -643,6 +676,202 @@
         <script type="text/javascript" src="assets/plugins/github-activity/src/github-activity.js"></script>
         <!-- custom js -->
         <script type="text/javascript" src="assets/js/main.js"></script>            
+        
+        <!-- Enhanced Animation Scripts -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Initialize animations for all sections
+                const allSections = document.querySelectorAll('.section');
+                
+                // Initialize Intersection Observer for all sections
+                const observeSections = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('animated');
+                            
+                            // Initialize skill bars animation when in view
+                            if (entry.target.classList.contains('skills')) {
+                                const skillBars = entry.target.querySelectorAll('.level-bar-inner');
+                                skillBars.forEach(bar => {
+                                    const level = bar.getAttribute('data-level');
+                                    setTimeout(() => {
+                                        bar.style.width = level;
+                                    }, 300);
+                                });
+                            }
+                            
+                            observeSections.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.2 });
+                
+                // Observe all sections
+                allSections.forEach(section => {
+                    observeSections.observe(section);
+                    
+                    // Add a slight delay for staggered entrance
+                    section.style.animation = `sectionFadeIn 0.8s ease forwards ${Math.random() * 0.5}s`;
+                    section.style.opacity = '0';
+                });
+                
+                // Add hover effects to all icons
+                const allIcons = document.querySelectorAll('.fa, .fab, .fas');
+                allIcons.forEach(icon => {
+                    icon.classList.add('animated-icon');
+                });
+                
+                // Add hover-card class to appropriate items
+                const cardItems = document.querySelectorAll('.latest .item, .education .item, .languages .item');
+                cardItems.forEach(item => {
+                    item.classList.add('hover-card');
+                });
+                
+                // Add highlight words to first paragraphs
+                const firstParagraphs = document.querySelectorAll('section p:first-of-type');
+                firstParagraphs.forEach(paragraph => {
+                    const text = paragraph.innerHTML;
+                    // Highlight important words
+                    const keywordsRegex = /\b(Software|Engineer|Machine Learning|Go|Python|Kubernetes|Cloud|Security|Networking|developer|specialist|expert|enthusiast)\b/gi;
+                    paragraph.innerHTML = text.replace(keywordsRegex, '<span class="highlight-word">$1</span>');
+                });
+                
+                // Add tooltips to skill bars
+                const skillItems = document.querySelectorAll('.skills .item');
+                skillItems.forEach(item => {
+                    const levelTitle = item.querySelector('.level-title');
+                    const levelText = levelTitle.textContent.trim();
+                    const levelBar = item.querySelector('.level-bar-inner');
+                    const level = levelBar.getAttribute('data-level');
+                    
+                    levelBar.setAttribute('data-tooltip', `${levelText}: ${level}`);
+                });
+                
+                // Project image hover effects
+                // Add pulsing effect to project images
+                const projectImages = document.querySelectorAll('.project-image');
+                projectImages.forEach(image => {
+                    image.addEventListener('mouseenter', function() {
+                        this.style.transform = 'scale(1.05)';
+                        this.style.boxShadow = 'none';
+                    });
+                    
+                    image.addEventListener('mouseleave', function() {
+                        this.style.transform = '';
+                        this.style.boxShadow = 'none';
+                    });
+                });
+                
+                // Add particle effect to header on hover
+                const header = document.querySelector('.header');
+                header.addEventListener('mouseenter', function() {
+                    if (!document.getElementById('particles-js')) {
+                        const particleDiv = document.createElement('div');
+                        particleDiv.id = 'particles-js';
+                        particleDiv.style.position = 'absolute';
+                        particleDiv.style.top = '0';
+                        particleDiv.style.left = '0';
+                        particleDiv.style.width = '100%';
+                        particleDiv.style.height = '100%';
+                        particleDiv.style.zIndex = '0';
+                        particleDiv.style.opacity = '0.3';
+                        header.insertBefore(particleDiv, header.firstChild);
+                        
+                        // This is just a placeholder effect - would require particles.js library
+                        // to be fully implemented
+                        const dots = 30;
+                        for (let i = 0; i < dots; i++) {
+                            const dot = document.createElement('div');
+                            dot.style.position = 'absolute';
+                            dot.style.width = '4px';
+                            dot.style.height = '4px';
+                            dot.style.background = '#4568dc';
+                            dot.style.borderRadius = '50%';
+                            dot.style.left = `${Math.random() * 100}%`;
+                            dot.style.top = `${Math.random() * 100}%`;
+                            dot.style.opacity = `${Math.random() * 0.5 + 0.3}`;
+                            dot.style.transform = 'translateY(0px)';
+                            dot.style.transition = 'transform 1s ease';
+                            particleDiv.appendChild(dot);
+                            
+                            setTimeout(() => {
+                                dot.style.transform = `translateY(${Math.random() * 20 - 10}px)`;
+                            }, Math.random() * 1000);
+                        }
+                    }
+                });
+                
+                // Add typing effect to skill titles
+                const skillTitles = document.querySelectorAll('.skills .level-title');
+                skillTitles.forEach(title => {
+                    title.addEventListener('mouseenter', function() {
+                        const text = this.textContent;
+                        this.setAttribute('data-original-text', text);
+                        this.innerHTML = '';
+                        
+                        let i = 0;
+                        const typeWriter = () => {
+                            if (i < text.length) {
+                                this.innerHTML += text.charAt(i);
+                                i++;
+                                setTimeout(typeWriter, 50);
+                            }
+                        };
+                        
+                        typeWriter();
+                    });
+                    
+                    title.addEventListener('mouseleave', function() {
+                        const originalText = this.getAttribute('data-original-text');
+                        if (originalText) {
+                            this.textContent = originalText;
+                        }
+                    });
+                });
+                
+                // Add staggered animation for About section paragraphs
+                const aboutParagraphs = document.querySelectorAll('.about.section .content p');
+                aboutParagraphs.forEach((paragraph, index) => {
+                    paragraph.style.opacity = '0';
+                    paragraph.style.transform = 'translateY(20px)';
+                    paragraph.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+                    
+                    setTimeout(() => {
+                        paragraph.style.opacity = '1';
+                        paragraph.style.transform = 'translateY(0)';
+                    }, 300 + (index * 150));
+                });
+                
+                // Add highlight on scroll for sections
+                window.addEventListener('scroll', function() {
+                    const sections = document.querySelectorAll('.section');
+                    sections.forEach(section => {
+                        const rect = section.getBoundingClientRect();
+                        if (rect.top >= 0 && rect.top <= window.innerHeight * 0.5) {
+                            section.style.boxShadow = 'none';
+                        } else {
+                            section.style.boxShadow = 'none';
+                        }
+                    });
+                });
+            });
+        </script>
+        
+        <!-- Final shadow override to ensure it has the highest priority -->
+        <style>
+            *, *::before, *::after,
+            .section, .section-inner, .section:hover, .section-inner:hover,
+            .item, .item:hover, .testimonials .item .quote,
+            .testimonials .item .quote::before, .testimonials .item:hover,
+            .experience .item::before, .education .item::before,
+            .header, .header .profile-image, .header .profile-image:hover,
+            .btn, .btn:hover, .btn:active, .btn:focus,
+            .hover-card, .hover-card:hover {
+                box-shadow: none !important;
+                -webkit-box-shadow: none !important;
+                -moz-box-shadow: none !important;
+                text-shadow: none !important;
+            }
+        </style>
     </body>
     </html> 
 
