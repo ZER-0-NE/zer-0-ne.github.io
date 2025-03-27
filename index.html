@@ -93,6 +93,271 @@
             transition-property: -webkit-transform, color, background-color !important;
             transition-property: -moz-transform, color, background-color !important;
         }
+        
+        /* Style for skill title hover highlight */
+        .highlight-skill {
+            color: #4568dc;
+            transform: translateX(5px);
+            transition: all 0.3s ease;
+        }
+        
+        .skills .level-title {
+            transition: all 0.3s ease;
+            padding-left: 0;
+            position: relative;
+        }
+        
+        .skills .level-title .level-label {
+            transition: all 0.3s ease;
+        }
+        
+        .highlight-skill .level-label {
+            color: #3a1c71;
+        }
+        
+        /* Recommendations Section Styles */
+        .recommendations .recommendation-item {
+            margin-bottom: 30px;
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-radius: 12px;
+            position: relative;
+            transition: all 0.3s ease;
+            border-left: 4px solid #4568dc;
+        }
+        
+        .recommendations .recommendation-item:hover {
+            transform: translateY(-5px);
+            background-color: #fff;
+        }
+        
+        .recommendations .quote-content {
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .recommendations .quote-icon {
+            color: #4568dc;
+            font-size: 24px;
+            position: absolute;
+            left: -10px;
+            top: -10px;
+        }
+        
+        .recommendations .quote-text {
+            font-size: 16px;
+            line-height: 1.7;
+            color: #434343;
+            margin-bottom: 15px;
+        }
+        
+        .recommendations .recommender {
+            margin-top: 20px;
+            border-top: 1px dashed rgba(69, 104, 220, 0.2);
+            padding-top: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .recommendations .recommender-info {
+            flex: 1;
+        }
+        
+        .recommendations .recommender-name {
+            font-weight: 700;
+            font-size: 16px;
+            color: #3a1c71;
+            margin-bottom: 3px;
+        }
+        
+        .recommendations .recommender-title {
+            font-size: 14px;
+            color: #778492;
+            font-style: italic;
+        }
+        
+        .recommendations .text-center {
+            margin-top: 20px;
+        }
+        
+        .recommendations .more-link {
+            display: inline-block;
+            padding: 8px 25px;
+            background-color: #f8f9fa;
+            border-radius: 30px;
+            color: #4568dc;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .recommendations .more-link:hover {
+            background-color: #4568dc;
+            color: #fff;
+            transform: translateY(-3px);
+        }
+        
+        .recommendations .more-link i {
+            margin-right: 5px;
+        }
+
+        /* Horizontal layout for recommendations */
+        .recommendations .recommendations-container {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: auto;
+            gap: 20px;
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+            scrollbar-width: thin;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        .recommendations .recommendation-item {
+            flex: 0 0 auto;
+            width: 350px;
+            margin-bottom: 15px;
+            height: 400px;
+            overflow-y: auto;
+            border-left: none;
+            border-top: 4px solid #4568dc;
+            position: relative;
+            cursor: pointer;
+        }
+        
+        /* Add arrow indicators for scrolling */
+        .recommendations .scroll-arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 40px;
+            height: 40px;
+            background: rgba(69, 104, 220, 0.7);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 5;
+            transition: all 0.3s ease;
+        }
+        
+        .recommendations .scroll-arrow:hover {
+            background: rgba(69, 104, 220, 1);
+        }
+        
+        .recommendations .scroll-left {
+            left: 10px;
+        }
+        
+        .recommendations .scroll-right {
+            right: 10px;
+        }
+        
+        .recommendations .recommender-name {
+            font-weight: 700;
+            font-size: 16px;
+            color: #3a1c71;
+            margin-bottom: 3px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+            display: inline-block;
+        }
+        
+        .recommendations .recommender-name:hover {
+            color: #4568dc;
+            text-decoration: underline;
+        }
+        
+        /* Scrollbar styling for recommendation items */
+        .recommendations .recommendation-item::-webkit-scrollbar {
+            width: 6px;
+        }
+        
+        .recommendations .recommendation-item::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        
+        .recommendations .recommendation-item::-webkit-scrollbar-thumb {
+            background: #ccc;
+            border-radius: 10px;
+        }
+        
+        .recommendations .recommendation-item::-webkit-scrollbar-thumb:hover {
+            background: #4568dc;
+        }
+        
+        /* Connect With Me section styles */
+    </style>
+
+    <!-- Final shadow override to ensure it has the highest priority -->
+    <style>
+        *, *::before, *::after,
+        .section, .section-inner, .section:hover, .section-inner:hover,
+        .item, .item:hover, .testimonials .item .quote,
+        .testimonials .item .quote::before, .testimonials .item:hover,
+        .experience .item::before, .education .item::before,
+        .header, .header .profile-image, .header .profile-image:hover,
+        .btn, .btn:hover, .btn:active, .btn:focus,
+        .hover-card, .hover-card:hover {
+            box-shadow: none !important;
+            -webkit-box-shadow: none !important;
+            -moz-box-shadow: none !important;
+            text-shadow: none !important;
+        }
+    </style>
+    
+    <!-- Contact List Styles -->
+    <style>
+        /* Simple Contact Information Styles */
+        .contact-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        .contact-list li {
+            margin-bottom: 18px;
+            padding-bottom: 18px;
+            border-bottom: 1px dashed rgba(69, 104, 220, 0.2);
+        }
+        
+        .contact-list li:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        
+        .contact-label {
+            font-size: 14px;
+            color: #778492;
+            margin-bottom: 6px;
+            font-weight: 500;
+        }
+        
+        .contact-value {
+            font-size: 15px;
+            color: #434343;
+        }
+        
+        .contact-value i {
+            color: #4568dc;
+            width: 20px;
+            margin-right: 5px;
+            text-align: center;
+        }
+        
+        .contact-value a {
+            color: #4568dc;
+            text-decoration: none;
+        }
+        
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head> 
 
@@ -178,6 +443,78 @@
                     </div><!--//section-inner-->                 
                 </section><!--//section-->
 
+                <!-- Recommendations Section - Moved from sidebar for better prominence -->
+                <section class="recommendations section">
+                    <div class="section-inner">
+                        <h2 class="heading">Professional Recommendations</h2>
+                        <div class="content">
+                            <div class="recommendations-container" id="recommender-container">
+                                <!-- Left and right scroll arrows -->
+                                <div class="scroll-arrow scroll-left" onclick="scrollRecommendations('left')">
+                                    <i class="fa fa-chevron-left"></i>
+                                </div>
+                                
+                                <div class="recommendation-item">
+                                    <div class="quote-content">
+                                        <i class="fa fa-quote-left quote-icon"></i>
+                                        <p class="quote-text">Having worked with Abhishek as his manager for two years, I must say Abhishek was an outstanding software engineer; his skills and knowledge in the area of Security and Distributed Services were unparalleled. Abhishek was tasked with building Security tools and identifying Security gaps in our platform and Abhishek did an excellent job in not only in identifying gaps but also recommending fixes and had gained expert knowledge of a complex multi-cloud architecture in no time. Abhishek always was up to date on software developments and thus finding new solutions. He was an excellent team player and was a reliable and enthusiastic engineer and was very easy to work with.</p>
+                                    </div>
+                                    <div class="recommender">
+                                        <div class="recommender-info">
+                                            <a href="https://www.linkedin.com/in/suresh-kumar-6a913a3/" target="_blank" class="recommender-link">
+                                                <div class="recommender-name">Suresh Kumar</div>
+                                            </a>
+                                            <div class="recommender-title">Senior Engineering Manager at F5</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="recommendation-item">
+                                    <div class="quote-content">
+                                        <i class="fa fa-quote-left quote-icon"></i>
+                                        <p class="quote-text">Abhishek was my mentee for a Google Summer of Code project where he developed neural network based methods to detect and classify killer whale vocalizations from hydrophone data. This work required Abhishek to research a new domain, become familiar with the state-of-the-art methods, develop a project plan, and implement the plan -- he did so with flying colors.</p>
+                                        <p class="quote-text">Over the course of the project, Abhishek demonstrated the ability to develop data pipelines, multiple neural network based models, utilize cloud-based resources, all while diligently documenting the work through version control of source code, models, and source code documentation.</p>
+                                        <p class="quote-text">Finally, Abhishek is an excellent communicator having kept me updated on all aspects of his remote work in a timely and cogent manner.</p>
+                                    </div>
+                                    <div class="recommender">
+                                        <div class="recommender-info">
+                                            <a href="https://www.linkedin.com/in/jesse-lopez-62243a12/" target="_blank" class="recommender-link">
+                                                <div class="recommender-name">Dr. Jesse Lopez</div>
+                                            </a>
+                                            <div class="recommender-title">Computational Scientist at Axiom Data Science</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="recommendation-item">
+                                    <div class="quote-content">
+                                        <i class="fa fa-quote-left quote-icon"></i>
+                                        <p class="quote-text">Abhishek did an exceptional job as an Intern at SketchBytes. He is sincere, hard working, proactive, result oriented, responsible, punctual, productive and a versatile person with a passion for learning new things quickly. I highly recommend him!</p>
+                                    </div>
+                                    <div class="recommender">
+                                        <div class="recommender-info">
+                                            <a href="https://www.linkedin.com/in/om-prakash-r-23380825/" target="_blank" class="recommender-link">
+                                                <div class="recommender-name">R Om Prakash</div>
+                                            </a>
+                                            <div class="recommender-title">CEO at SketchBytes Healthcare</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="scroll-arrow scroll-right" onclick="scrollRecommendations('right')">
+                                    <i class="fa fa-chevron-right"></i>
+                                </div>
+                            </div>
+
+                            <div class="text-center">
+                                <a class="more-link" href="https://www.linkedin.com/in/abhishek-singh-046245122/" target="_blank">
+                                    <i class="fa fa-linkedin"></i> View more on LinkedIn
+                                </a>
+                            </div>
+                        </div><!--//content-->
+                    </div><!--//section-inner-->
+                </section><!--//section-->
+
                 <section class="experience section">
                     <div class="section-inner">
                         <h2 class="heading">Work Experience</h2>
@@ -200,7 +537,7 @@
 
                         	<div class="item">
 
-                                <h3 class="title">Software Engineer <span class="place"><a href="https://www.ibm.com/in-en">IBM</a></span> <span class="year">(Jan 2021 - Present)</span></h3>
+                                <h3 class="title">Software Engineer <span class="place"><a href="https://www.ibm.com/in-en">IBM</a></span> <span class="year">(Jan 2021 - June 2022)</span></h3>
                                 <p> Migrated and provisioned infrastructure of 5+ on-premise applications to hybrid cloud of AT&T on Microsoft Azure </p>
                                 <p> Automated infrastructure using Terraform (IaC) and Azure DevOps for building pipelines and Packer for machine images </p>
                                 <p> Developed App Service Factory Model streamlining deployment of App
@@ -419,14 +756,25 @@
                 <div class="secondary col-md-4 col-sm-12 col-xs-12">
                    <aside class="info aside section">
                     <div class="section-inner">
-                        <h2 class="heading sr-only">Basic Information</h2>
+                        <h2 class="heading">Contact Information</h2>
                         <div class="content">
-                            <ul class="list-unstyled">
-                                <li><i class="fa fa-map-marker"></i><span class="sr-only">Location:</span>Current City: Bengaluru</li>
-                                <li><i class="fa fa-envelope"></i><span class="sr-only">Email:</span><a href="mailto:abhishek.nitdgp.98@gmail.com">abhishek.nitdgp.98</a></li>
-                                <li><i class="fa fa-link"></i><span class="sr-only">Blog:</span><a href="https://thezer00ne.wordpress.com">My Wordpress Blog</a></li>
-                                <!-- <li><i class="fa fa-link"></i><span class="sr-only"></span><a href="https://drive.google.com/file/d/1jpqj2QCdnXiDqAyafX1NpDQYd2csdwWM/view?usp=sharing">CV (2 pages)</a></li> -->
-                                <li><i class="fa fa-link"></i><span class="sr-only">:</span><a href="https://drive.google.com/file/d/1d2tUpqVUtUVSF614OyYxr4EzWuUAXbde/view?usp=sharing">Resumé</a></li>
+                            <ul class="contact-list">
+                                <li>
+                                    <div class="contact-label">Location</div>
+                                    <div class="contact-value"><i class="fa fa-map-marker"></i> Bengaluru, India</div>
+                                </li>
+                                <li>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value"><i class="fa fa-envelope"></i> <a href="mailto:abhishek.nitdgp.98@gmail.com">abhishek.nitdgp.98@gmail.com</a></div>
+                                </li>
+                                <li>
+                                    <div class="contact-label">Blog</div>
+                                    <div class="contact-value"><i class="fa fa-rss"></i> <a href="https://thezer00ne.wordpress.com">My WordPress Blog</a></div>
+                                </li>
+                                <li>
+                                    <div class="contact-label">Resumé</div>
+                                    <div class="contact-value"><i class="fa fa-file-text"></i> <a href="https://drive.google.com/file/d/1d2tUpqVUtUVSF614OyYxr4EzWuUAXbde/view?usp=sharing">Download PDF</a></div>
+                                </li>
                             </ul>
                         </div><!--//content-->  
                     </div><!--//section-inner-->                 
@@ -505,47 +853,7 @@
                     </div><!--//section-inner-->
                 </aside><!--//section-->
 
-                <aside class="testimonials aside section">
-                    <div class="section-inner">
-                        <h3 class="heading">Recommendations:</h3>
-                        <div class="content">
-                            <div class="item">
-                                <blockquote class="quote">                                  
-                                    <p><i class="fa fa-quote-left"></i>Abhishek did an exceptional job as an Intern at SketchBytes. 
-                                      He is sincere, hard working, proactive, result oriented, responsible, punctual, productive and a versatile person with a passion for learning new things quickly.
-                                      I highly recommend him!</p>
-                                  </blockquote>                
-                                  <p class="source"><span class="name">R Om Prakash</span><br /><span class="title">CEO at SketchBytes Healthcare</span></p>                                                             
-                            </div><!--//item-->
-
-                            <div class="item">
-                                <blockquote class="quote">                                  
-                                    <p><i class="fa fa-quote-left"></i>Abhishek was my mentee for a Google Summer of Code project where he developed neural network based methods to detect and classify killer whale vocalizations from hydrophone data. This work required Abhishek to research a new domain, become familiar with the state-of-the-art methods, develop a project plan, and implement the plan -- he did so with flying colors.<br><br>
-
-                                    Over the course of the project, Abhishek demonstrated the ability to develop data pipelines, multiple neural network based models, utilize cloud-based resources, all while diligently documenting the work through version control of source code, models, and source code documentation. <br>
-
-                                    Finally, Abhishek is an excellent communicator having kept me updated on all aspects of his remote work in a timely and cogent manner. </p>
-                                  </blockquote>                
-                                  <p class="source"><span class="name">Dr. Jesse Lopez</span><br /><span class="title">Computational Scientist at Axiom Data Science</span></p>                                                             
-                            </div><!--//item-->
-
-                                                        <div class="item">
-                                <blockquote class="quote">                                  
-                                    <p><i class="fa fa-quote-left"></i>Having worked with Abhishek as his manager for two years, I must say Abhishek was an outstanding software engineer; his skills and knowledge in the area of Security and Distributed Services were unparalleled. Abhishek was tasked with building Security tools and identifying Security gaps in our platform and Abhishek did an excellent job in not only in identifying gaps but also recommending fixes and had gained expert knowledge of a complex multi-cloud architecture in no time. Abhishek always was up to date on software developments and thus finding new solutions. He was an excellent team player and was a reliable and enthusiastic engineer and was very easy to work with. </p>
-                                  </blockquote>                
-                                  <p class="source"><span class="name">Suresh Kumar</span><br /><span class="title">Senior Engineering Manager at F5</span></p>                                                             
-                            </div><!--//item-->
-
-
-                              <p><a class="more-link" href="https://www.linkedin.com/in/abhishek-singh-046245122/"><i class="fa fa-external-link"></i> Linkedin</a></p> 
-
-                          </div><!--//content-->
-                      </div><!--//section-inner-->
-                  </aside><!--//section-->
-
-                  
-
-                <aside class="list awards and honors aside section">
+                <!-- <aside class="list awards and honors aside section">
                     <div class="section-inner">
                         <h3 class="heading">Achievements:</h3>
                         <div class="content">
@@ -558,7 +866,7 @@
                             </ul>
                         </div><!--//content-->
                     </div><!--//section-inner-->
-                </aside><!--//section-->
+                </aside>//section -->
 
                 <aside class="list awards and honors aside section">
                     <div class="section-inner">
@@ -803,28 +1111,19 @@
                 // Add typing effect to skill titles
                 const skillTitles = document.querySelectorAll('.skills .level-title');
                 skillTitles.forEach(title => {
+                    // Store the original HTML content once
+                    const originalContent = title.innerHTML;
+                    const baseText = title.childNodes[0].nodeValue.trim();
+                    
+                    // Add a subtle highlight effect instead of typing
                     title.addEventListener('mouseenter', function() {
-                        const text = this.textContent;
-                        this.setAttribute('data-original-text', text);
-                        this.innerHTML = '';
-                        
-                        let i = 0;
-                        const typeWriter = () => {
-                            if (i < text.length) {
-                                this.innerHTML += text.charAt(i);
-                                i++;
-                                setTimeout(typeWriter, 50);
-                            }
-                        };
-                        
-                        typeWriter();
+                        // Add a highlight class instead of changing the content
+                        title.classList.add('highlight-skill');
                     });
                     
                     title.addEventListener('mouseleave', function() {
-                        const originalText = this.getAttribute('data-original-text');
-                        if (originalText) {
-                            this.textContent = originalText;
-                        }
+                        // Remove the highlight class
+                        title.classList.remove('highlight-skill');
                     });
                 });
                 
@@ -872,6 +1171,43 @@
                 text-shadow: none !important;
             }
         </style>
+
+        <script>
+        // Function to scroll recommendations horizontally
+        function scrollRecommendations(direction) {
+            const container = document.getElementById('recommender-container');
+            const scrollAmount = 380; // Slightly more than card width to include gap
+            
+            if (direction === 'left') {
+                container.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else {
+                container.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Make recommendation items clickable to open LinkedIn profiles
+        document.addEventListener('DOMContentLoaded', function() {
+            const recommendationItems = document.querySelectorAll('.recommendation-item');
+            
+            recommendationItems.forEach(item => {
+                const link = item.querySelector('.recommender-link');
+                if (link) {
+                    item.addEventListener('click', function(e) {
+                        // Only open the link if we didn't click directly on a link or the scrollbar
+                        if (!e.target.closest('a') && e.target.closest('.quote-content')) {
+                            window.open(link.getAttribute('href'), '_blank');
+                        }
+                    });
+                }
+            });
+        });
+        </script>
     </body>
     </html> 
 
