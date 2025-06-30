@@ -2,49 +2,107 @@
 layout: default
 ---
 
-<div class="container">
-  <h1 class="page-title">My Reading List</h1>
-  <div class="books-container">
-    {% for book in site.data.books %}
-      <div class="book-item">
-        <h3 class="book-title">{{ book.title }}</h3>
-        <p class="book-summary">{{ book.summary }}</p>
-      </div>
-    {% endfor %}
+<div class="container sections-wrapper">
+  <div class="row">
+    <div class="primary col-md-12 col-sm-12 col-xs-12">
+      <section class="books section">
+        <div class="section-inner">
+          <h2 class="heading">My Reading List</h2>
+          <div class="content">
+            <div class="books-container">
+              {% for book in site.data.books %}
+                <div class="book-card-wrapper">
+                  <div class="book-card">
+                    <div class="book-card-front">
+                      <h3 class="book-title">{{ book.title }}</h3>
+                    </div>
+                    <div class="book-card-back">
+                      <p class="book-summary">{{ book.summary | truncatewords: 40 }}</p>
+                    </div>
+                  </div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
   </div>
 </div>
 
 <style>
-  .page-title {
-    text-align: center;
-    margin-bottom: 50px;
-    font-size: 2.5em;
-    color: #333;
-  }
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 35px;
+  padding: 20px 0;
+}
+
+.book-card-wrapper {
+  perspective: 1000px;
+  min-height: 250px;
+}
+
+.book-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.book-card-wrapper:hover .book-card {
+  transform: rotateY(180deg);
+}
+
+.book-card-front,
+.book-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.book-card-front {
+  z-index: 2;
+}
+
+.book-card-back {
+  transform: rotateY(180deg);
+  background: linear-gradient(135deg, #f7f7f7 0%, #e8e8e8 100%);
+  color: #333;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.book-title {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.book-summary {
+  font-style: italic;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
   .books-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 25px;
   }
-  .book-item {
-    background: #fff;
-    padding: 25px;
-    border-radius: 8px;
-    border-left: 5px solid #4568dc;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  .book-card-wrapper {
+    min-height: 220px;
   }
-  .book-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-  }
-  .book-title {
-    font-size: 1.4em;
-    margin-bottom: 15px;
-    color: #3a1c71;
-  }
-  .book-summary {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #555;
-  }
+}
 </style>
